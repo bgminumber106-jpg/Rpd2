@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://gitlab.com/raposabrty/pcrdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
+          curl -L -A "Mozilla/5.0" -o Downloads.bat "URL_HERE" -OutFile "Download.bat"
           cmd /c Downloads.bat
 
       - name: Show Website
